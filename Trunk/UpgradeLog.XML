@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="dotNetRDF">
+</Property><Property Name="Solution File" Value="D:\Work Projects\Semantic Web\dotNetRDF\Trunk\dotNetRDF.sln">
+</Property><Property Name="Date" Value="Friday, June 17, 2011">
+</Property><Property Name="Time" Value="17:22 PM">
+</Property></Properties><Event ErrorLevel="0" Project="dotNetRDF" Source="Libraries\core\dotNetRDF.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDF" Source="Libraries\core\dotNetRDF.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="dotNetRDFTest" Source="Testing\testsuite\dotNetRDFTest.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDFTest" Source="Testing\testsuite\dotNetRDFTest.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="SPARQLEndpointDemo" Source="Samples\sparqldemo\SPARQLEndpointDemo.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SPARQLEndpointDemo" Source="Samples\sparqldemo\SPARQLEndpointDemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BSBM" Source="Utilities\bsbm\BSBM.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="BSBM" Source="Utilities\bsbm\BSBM.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="dotNetRDFUnitTests" Source="Testing\unittest\dotNetRDFUnitTests.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDFUnitTests" Source="Testing\unittest\dotNetRDFUnitTests.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="StoreManager" Source="Utilities\storemanager\StoreManager.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="StoreManager" Source="Utilities\storemanager\StoreManager.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="VirtuosoSample" Source="Samples\virtuoso\VirtuosoSample.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="VirtuosoSample" Source="Samples\virtuoso\VirtuosoSample.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="SparqlGUI" Source="Utilities\SparqlGUI\SparqlGUI.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="SparqlGUI" Source="Utilities\SparqlGUI\SparqlGUI.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="WebDemos" Source="Samples\WebDemos\WebDemos.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WebDemos" Source="Samples\WebDemos\WebDemos.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="dotNetRDF.LinkedData" Source="Libraries\linkeddata\dotNetRDF.LinkedData.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDF.LinkedData" Source="Libraries\linkeddata\dotNetRDF.LinkedData.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="rdfConvert" Source="Utilities\rdfConvert\rdfConvert.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="rdfConvert" Source="Utilities\rdfConvert\rdfConvert.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="AllegroGraphIndexer" Source="Utilities\AllegroGraphIndexer\AllegroGraphIndexer.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="AllegroGraphIndexer" Source="Utilities\AllegroGraphIndexer\AllegroGraphIndexer.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="rdfQuery" Source="Utilities\rdfQuery\rdfQuery.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="rdfQuery" Source="Utilities\rdfQuery\rdfQuery.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="rdfWebDeploy" Source="Utilities\rdfWebDeploy\rdfWebDeploy.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="rdfWebDeploy" Source="Utilities\rdfWebDeploy\rdfWebDeploy.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="rdfEditor" Source="Utilities\rdfEditor\rdfEditor.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="rdfEditor" Source="Utilities\rdfEditor\rdfEditor.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="ExportCoreContentsToTemplate" Source="Build\ExportCoreContentsToTemplate\ExportCoreContentsToTemplate.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="ExportCoreContentsToTemplate" Source="Build\ExportCoreContentsToTemplate\ExportCoreContentsToTemplate.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="dotNetRDF.Linq" Source="Libraries\linq\dotNetRDF.Linq.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDF.Linq" Source="Libraries\linq\dotNetRDF.Linq.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="rdfMetal" Source="Utilities\RdfMetal\rdfMetal.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="rdfMetal" Source="Utilities\RdfMetal\rdfMetal.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="linq-sparql-endpoint" Source="Testing\linq-tests\linq-sparql-endpoint\linq-sparql-endpoint.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="linq-sparql-endpoint" Source="Testing\linq-tests\linq-sparql-endpoint\linq-sparql-endpoint.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="rdf-music" Source="Testing\linq-tests\rdf-music\rdf-music.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="rdf-music" Source="Testing\linq-tests\rdf-music\rdf-music.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="linq-unit-tests" Source="Testing\linq-tests\unit-tests\linq-unit-tests.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="linq-unit-tests" Source="Testing\linq-tests\unit-tests\linq-unit-tests.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="dotNetRDF.Interop.SemWeb" Source="Libraries\interop.semweb\dotNetRDF.Interop.SemWeb.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDF.Interop.SemWeb" Source="Libraries\interop.semweb\dotNetRDF.Interop.SemWeb.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="dotNetRDF.Interop.Jena" Source="Libraries\interop.jena\dotNetRDF.Interop.Jena.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDF.Interop.Jena" Source="Libraries\interop.jena\dotNetRDF.Interop.Jena.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="dotNetRDF.Interop.Intellidimension" Source="Libraries\interop.intellidimension\dotNetRDF.Interop.Intellidimension.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDF.Interop.Intellidimension" Source="Libraries\interop.intellidimension\dotNetRDF.Interop.Intellidimension.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="dotNetRDF.Interop.Sesame" Source="Libraries\interop.sesame\dotNetRDF.Interop.Sesame.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDF.Interop.Sesame" Source="Libraries\interop.sesame\dotNetRDF.Interop.Sesame.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="dotNetRDF.Alexandria" Source="Libraries\alexandria\dotNetRDF.Alexandria.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDF.Alexandria" Source="Libraries\alexandria\dotNetRDF.Alexandria.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="dotNetRDF.Alexandria.MongoDB" Source="Libraries\alexandria.mongodb\dotNetRDF.Alexandria.MongoDB.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDF.Alexandria.MongoDB" Source="Libraries\alexandria.mongodb\dotNetRDF.Alexandria.MongoDB.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="soh" Source="Utilities\soh\soh.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="soh" Source="Utilities\soh\soh.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="dotNetRDF.WinForms" Source="Libraries\dotNetRDF.WinForms\dotNetRDF.WinForms.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDF.WinForms" Source="Libraries\dotNetRDF.WinForms\dotNetRDF.WinForms.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="sesame-test" Source="Testing\sesame-test\sesame-test.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="sesame-test" Source="Testing\sesame-test\sesame-test.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="rdfOptStats" Source="Utilities\rdfOptStats\rdfOptStats.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="rdfOptStats" Source="Utilities\rdfOptStats\rdfOptStats.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="GraphBenchmarker" Source="Testing\GraphBenchmarker\GraphBenchmarker.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="GraphBenchmarker" Source="Testing\GraphBenchmarker\GraphBenchmarker.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="dotNetRDF.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="dotNetRDF.sln" Description="No Conversion Required">
+</Event></UpgradeLog>

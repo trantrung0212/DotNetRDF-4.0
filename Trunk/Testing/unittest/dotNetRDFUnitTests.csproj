@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD80F826-56A3-4A88-B466-DDFA0691FFB8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VDS.RDF.Test</RootNamespace>
+    <AssemblyName>dotNetRDF.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IKVM.OpenJDK.Core, Version=0.42.0.3, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime, Version=0.42.0.3, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="LinkedDataTools.JenaDotNet, Version=2.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\LinkedDataTools.JenaDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.0.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.4.0.2\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenLink.Data.Virtuoso, Version=6.2.3128.1, Culture=neutral, PublicKeyToken=6654f6917d07cb95, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\OpenLink.Data.Virtuoso.dll</HintPath>
+    </Reference>
+    <Reference Include="SemWeb, Version=1.0.7.0, Culture=neutral, PublicKeyToken=3e1051c7e190e42e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\SemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseTest.cs" />
+    <Compile Include="BasicTests1.cs" />
+    <Compile Include="BasicTests2.cs" />
+    <Compile Include="Parsing\CachingTests.cs" />
+    <Compile Include="Interop\SemWebInteropTests.cs" />
+    <Compile Include="Sparql\LeviathanTests.cs" />
+    <Compile Include="Parsing\LoaderTests.cs" />
+    <Compile Include="NamespaceMapperTest.cs" />
+    <Compile Include="NativeStoreTests.cs" />
+    <Compile Include="Ontology\OntologyTests.cs" />
+    <Compile Include="Parsing\ParserTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sparql\SparqlTests.cs" />
+    <Compile Include="Storage\SqlIOTests.cs" />
+    <Compile Include="Storage\TalisTest.cs" />
+    <Compile Include="TestTools.cs" />
+    <Compile Include="UpdateTests.cs" />
+    <Compile Include="Storage\VirtuosoTest.cs" />
+    <Compile Include="Writing\WriterTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\core\dotNetRDF.csproj">
+      <Project>{BFBAC159-1E60-4D03-8ACA-D34E31EB83BF}</Project>
+      <Name>dotNetRDF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\interop.jena\dotNetRDF.Interop.Jena.csproj">
+      <Project>{5DF56038-7FEE-40DA-92D5-49932924A32A}</Project>
+      <Name>dotNetRDF.Interop.Jena</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libraries\interop.semweb\dotNetRDF.Interop.SemWeb.csproj">
+      <Project>{21512DB9-2795-4ED0-B3DB-910499A9D8AC}</Project>
+      <Name>dotNetRDF.Interop.SemWeb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\bad_rdfa.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\gr1.xhtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\MergePart1.ttl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\MergePart2.ttl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Libraries\core\Core\TripleComparers.cs">
+      <Link>TripleComparers.cs</Link>
+    </Compile>
+    <Compile Include="CompareToTests.cs" />
+    <Compile Include="GraphDiffTests.cs" />
+    <Compile Include="HardGraphMatching.cs" />
+    <Compile Include="Hypercube.cs" />
+    <Compile Include="IndexingTests.cs" />
+    <Compile Include="Parsing\BaseUriAssignmentTests.cs" />
+    <Compile Include="Parsing\BlockingTextReaderTests.cs" />
+    <Compile Include="Parsing\EmptyFileParsing.cs" />
+    <Compile Include="Parsing\Handlers\ChainedHandlerTests.cs" />
+    <Compile Include="Parsing\Handlers\UriLoaderHandlerTests.cs" />
+    <Compile Include="Parsing\Handlers\CountHandlerTests.cs" />
+    <Compile Include="Parsing\Handlers\FileLoaderHandlerTests.cs" />
+    <Compile Include="Parsing\Handlers\GraphHandlerTests.cs" />
+    <Compile Include="Parsing\Handlers\MultiHandlerTests.cs" />
+    <Compile Include="Parsing\Handlers\PagingHandlerTests.cs" />
+    <Compile Include="Parsing\Handlers\ResultSetHandlerTests.cs" />
+    <Compile Include="Parsing\Handlers\StoreHandlerBlankNodeTests.cs" />
+    <Compile Include="Parsing\Handlers\StoreHandlerTests.cs" />
+    <Compile Include="Parsing\Handlers\WriteThroughHandlerTests.cs" />
+    <Compile Include="Parsing\Handlers\WriteToStoreHandlerTests.cs" />
+    <Compile Include="Parsing\RdfXmlNamespaces.cs" />
+    <Compile Include="Parsing\SpeedTesting.cs" />
+    <Compile Include="Parsing\StringReaderEncodingTests.cs" />
+    <Compile Include="Sparql\AlgebraReverseTranslation.cs" />
+    <Compile Include="Sparql\BindingsTests.cs" />
+    <Compile Include="Sparql\ConstructWithOptionalTests.cs" />
+    <Compile Include="Sparql\DataTableTests.cs" />
+    <Compile Include="Sparql\DefaultGraphTests2.cs" />
+    <Compile Include="Sparql\ExplainProcessorTests.cs" />
+    <Compile Include="Sparql\FilterPlacementTests.cs" />
+    <Compile Include="Sparql\NegationTests.cs" />
+    <Compile Include="Sparql\OptimiserTests.cs" />
+    <Compile Include="Sparql\PropertyPathEvaluationTests.cs" />
+    <Compile Include="Sparql\PropertyPathTransformationTests.cs" />
+    <Compile Include="Sparql\QueryThreadSafety.cs" />
+    <Compile Include="Sparql\QueryTimeouts.cs" />
+    <Compile Include="Sparql\RemoteEndpoints.cs" />
+    <Compile Include="Sparql\ServiceTests.cs" />
+    <Compile Include="Sparql\StrictOptimiserTest.cs" />
+    <Compile Include="Sparql\WeightedOptimiserTests.cs" />
+    <Compile Include="Storage\AllegroGraphTests.cs" />
+    <Compile Include="Configuration\ConfigurationApiTests.cs" />
+    <Compile Include="Storage\FourStoreTest.cs" />
+    <Compile Include="Storage\FusekiTest.cs" />
+    <Compile Include="Storage\SesameTests.cs" />
+    <Compile Include="EventTests.cs" />
+    <Compile Include="Storage\StardogTests.cs" />
+    <Compile Include="Update\GenericUpdateProcessorTests.cs" />
+    <Compile Include="Update\TransactionalUpdateSqlTests.cs" />
+    <Compile Include="Update\TransactionalUpdateTests.cs" />
+    <Compile Include="Update\UpdateTimeouts.cs" />
+    <Compile Include="Web\ConnegTests.cs" />
+    <Compile Include="Writing\CollectionCompressionTests.cs" />
+    <Compile Include="Writing\FormattingTests.cs" />
+    <Compile Include="Interop\JenaInteropTests.cs" />
+    <Compile Include="PelletTests.cs" />
+    <Compile Include="Parsing\RdfATests.cs" />
+    <Compile Include="Parsing\RdfXmlTests.cs" />
+    <Compile Include="Sparql\DefaultGraphTests.cs" />
+    <Compile Include="Sparql\GroupByTests.cs" />
+    <Compile Include="Sparql\ParsingTests.cs" />
+    <Compile Include="Sparql\ScalarArgumentsTests.cs" />
+    <Compile Include="Sparql\SparqlNewFunctions.cs" />
+    <Compile Include="Sparql\SparqlParsingComplex.cs" />
+    <Compile Include="Sparql\SparqlTests2.cs" />
+    <Compile Include="Sparql\DescribeAlgorithms.cs" />
+    <Compile Include="Sparql\ResultSetWriterTests.cs" />
+    <Compile Include="Sparql\UpdateTests.cs" />
+    <Compile Include="Sparql\ViewTests.cs" />
+    <Compile Include="Storage\SparqlUniformHttpProtocolTest.cs" />
+    <Compile Include="Parsing\VariableNodeTests.cs" />
+    <Compile Include="Web\ETagTests.cs" />
+    <Compile Include="Web\ServiceDescription.cs" />
+    <Compile Include="Writing\OwlOneOf.cs" />
+    <Compile Include="Writing\RdfXmlWriterTests.cs" />
+    <Compile Include="Writing\SchemaWriter.cs" />
+    <Compile Include="Writing\SparqlXmlTests.cs" />
+    <Compile Include="Writing\StringEscapingTest.cs" />
+    <Compile Include="Writing\TriGWriterTests.cs" />
+    <Content Include="resources\bad_profile.xhtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\charescaping.owl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\gr3b.xhtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\gr3.xhtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\gr2b.xhtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\gr2.xhtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\gr1b.xhtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\example.rdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\InferenceTest.ttl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\json.owl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\list-3.srx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\list-3.srx.out">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\no-distinct-opt.srx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\no-distinct-opt.srx.out">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\property-path-duplicates.ttl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\result-opt-3.ttl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\result-opt-3.ttl.out">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\Turtle.ttl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\bnodes.srx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\bnodes.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\noise.ttl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\Utilities\bsbm\App_Data\dataset_50.ttl">
+      <Link>resources\dataset_50.ttl</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="embedded.ttl" />
+    <Content Include="resources\chado-in-owl.ttl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\complex-collections.nt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\cyrillic.rdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\describe-algos.ttl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\anton.rdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\anton.rq">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\childgraphpattern.rq">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\childgraphpattern2.rq">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\multiple-options.trig">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\ttl-with-bom.ttl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\ttl-without-bom.ttl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\multiple-optionals-alternate.rq">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\bad_srx.srx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="resources\empty-string-rdfxml.rdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="resources\now01.rq">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\rdfxml-namespaces.rdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\multiple-optionals.rq">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\writetostore.nq">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Sparql\SampleWeightings.n3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

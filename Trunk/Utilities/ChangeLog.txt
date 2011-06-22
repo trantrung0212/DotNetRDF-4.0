@@ -1,0 +1,36 @@
+dotNetRDF Toolkit for Windows/Mono
+==================================
+
+A Toolkit of command line utilities and GUI tools for working with RDF data
+
+Version 0.3.0 Alpha
+
+Robert Vesse 2009-11
+rvesse@vdesign-studios.com
+
+Change Log
+----------
+
+This represents a summary of additions, changes and removals for the 0.3.0 release of the dotNetRDF Toolkit
+for Windows/Mono detailed by Tool:
+
+rdfConvert
+- Some corrections to the Usage Summary
+- Allowed -output to be used to specify the full output filename only when there is a single input
+
+rdfEditor (Not available under Mono)
+ 
+rdfOptStats 
+   
+rdfQuery
+ 
+rdfWebDeploy
+
+soh 
+
+SparqlGUI
+- Added the ability to have query explanations logged to the log file
+
+StoreManager
+- Added support for Dydra
+- Added support for connecting to stores in the Root Catalog of an AllegroGraph 4.x server

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="dotNetRDF.Linq">
+</Property><Property Name="Solution File" Value="D:\Work Projects\Semantic Web\dotNetRDF\Trunk\dotNetRDF.Linq.sln">
+</Property><Property Name="Date" Value="Friday, June 17, 2011">
+</Property><Property Name="Time" Value="18:33 PM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="dotNetRDF.Linq" Source="Libraries\linq\dotNetRDF.Linq.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDF.Linq" Source="Libraries\linq\dotNetRDF.Linq.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="rdfMetal" Source="Utilities\rdfMetal\rdfMetal.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="rdfMetal" Source="Utilities\rdfMetal\rdfMetal.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="dotNetRDF" Source="Libraries\core\dotNetRDF.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="dotNetRDF" Source="Libraries\core\dotNetRDF.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="linq-unit-tests" Source="Testing\linq-tests\unit-tests\linq-unit-tests.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="linq-unit-tests" Source="Testing\linq-tests\unit-tests\linq-unit-tests.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="rdf-music" Source="Testing\linq-tests\rdf-music\rdf-music.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="rdf-music" Source="Testing\linq-tests\rdf-music\rdf-music.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="linq-sparql-endpoint" Source="Testing\linq-tests\linq-sparql-endpoint\linq-sparql-endpoint.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="linq-sparql-endpoint" Source="Testing\linq-tests\linq-sparql-endpoint\linq-sparql-endpoint.csproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="linq-sparql-endpoint" Source="Testing\linq-tests\linq-sparql-endpoint\linq-sparql-endpoint.csproj" Description="The Web Application Project linq-sparql-endpoint is configured to use IIS. Unable to access the IIS metabase. You do not have sufficient privilege to access IIS web sites on your machine.">
+</Event><Event ErrorLevel="0" Project="" Source="dotNetRDF.Linq.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="dotNetRDF.Linq.sln" Description="Converted">
+</Event></UpgradeLog>

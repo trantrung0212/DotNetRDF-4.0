@@ -1,0 +1,204 @@
+﻿@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dnr: <http://www.dotnetrdf.org/configuration#>.
+
+<dotnetrdf:/dotNetRDFBSBM/bsbm10> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm10 .
+									 
+<dotnetrdf:/dotNetRDFBSBM/bsbm10stats> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm10 ;
+									 dnr:queryOptimiser [ a dnr:QueryOptimiser ;
+														  dnr:type "VDS.RDF.Query.Optimisation.WeightedOptimiser" ;
+														  dnr:usingGraph [ a dnr:Graph ;
+																		   dnr:type "VDS.RDF.Graph" ;
+																		   dnr:fromFile "~/App_Data/stats_10.ttl" ] ] .
+									 									 
+_:bsbm10 a dnr:SparqlQueryProcessor ;
+		   dnr:usingStore [ a dnr:TripleStore ;
+		   					dnr:type "VDS.RDF.TripleStore" ;
+ 							dnr:usingGraph [ a dnr:Graph ; 
+ 											 dnr:type "VDS.RDF.Graph" ; 
+ 											 dnr:fromFile "~/App_Data/dataset_10.ttl" ] ] .
+ 											 
+<dotnetrdf:/dotNetRDFBSBM/bsbm50> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm50 .
+									 
+<dotnetrdf:/dotNetRDFBSBM/bsbm50stats> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm50 ;
+									 dnr:queryOptimiser [ a dnr:QueryOptimiser ;
+														  dnr:type "VDS.RDF.Query.Optimisation.WeightedOptimiser" ;
+														  dnr:usingGraph [ a dnr:Graph ;
+																		   dnr:type "VDS.RDF.Graph" ;
+																		   dnr:fromFile "~/App_Data/stats_50.ttl" ] ] .
+									 									 
+_:bsbm50 a dnr:SparqlQueryProcessor ;
+		   dnr:usingStore [ a dnr:TripleStore ;
+		   					dnr:type "VDS.RDF.TripleStore" ;
+ 							dnr:usingGraph [ a dnr:Graph ; 
+ 											 dnr:type "VDS.RDF.Graph" ; 
+ 											 dnr:fromFile "~/App_Data/dataset_50.ttl" ] ] .
+ 											 
+<dotnetrdf:/dotNetRDFBSBM/bsbm100> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm100 .
+									 
+<dotnetrdf:/dotNetRDFBSBM/bsbm100stats> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm100 ;
+									 dnr:queryOptimiser [ a dnr:QueryOptimiser ;
+														  dnr:type "VDS.RDF.Query.Optimisation.WeightedOptimiser" ;
+														  dnr:usingGraph [ a dnr:Graph ;
+																		   dnr:type "VDS.RDF.Graph" ;
+																		   dnr:fromFile "~/App_Data/stats_100.ttl" ] ] .
+									 									 
+_:bsbm100 a dnr:SparqlQueryProcessor ;
+		   dnr:usingStore [ a dnr:TripleStore ;
+		   					dnr:type "VDS.RDF.TripleStore" ;
+ 							dnr:usingGraph [ a dnr:Graph ; 
+ 											 dnr:type "VDS.RDF.Graph" ; 
+ 											 dnr:fromFile "~/App_Data/dataset_100.ttl" ] ] .
+ 											 
+<dotnetrdf:/dotNetRDFBSBM/bsbm250> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm250 .
+									 
+<dotnetrdf:/dotNetRDFBSBM/bsbm250stats> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm250 ;
+									 dnr:queryOptimiser [ a dnr:QueryOptimiser ;
+														  dnr:type "VDS.RDF.Query.Optimisation.WeightedOptimiser" ;
+														  dnr:usingGraph [ a dnr:Graph ;
+																		   dnr:type "VDS.RDF.Graph" ;
+																		   dnr:fromFile "~/App_Data/stats_250.ttl" ] ] .
+									 									 
+_:bsbm250 a dnr:SparqlQueryProcessor ;
+		   dnr:usingStore [ a dnr:TripleStore ;
+		   					dnr:type "VDS.RDF.TripleStore" ;
+ 							dnr:usingGraph [ a dnr:Graph ; 
+ 											 dnr:type "VDS.RDF.Graph" ; 
+ 											 dnr:fromFile "~/App_Data/dataset_250.ttl" ] ] .
+ 											 
+<dotnetrdf:/dotNetRDFBSBM/bsbm500> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm500 .
+									 
+<dotnetrdf:/dotNetRDFBSBM/bsbm500stats> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm500 ;
+									 dnr:queryOptimiser [ a dnr:QueryOptimiser ;
+														  dnr:type "VDS.RDF.Query.Optimisation.WeightedOptimiser" ;
+														  dnr:usingGraph [ a dnr:Graph ;
+																		   dnr:type "VDS.RDF.Graph" ;
+																		   dnr:fromFile "~/App_Data/stats_500.ttl" ] ] .
+									 									 
+_:bsbm500 a dnr:SparqlQueryProcessor ;
+		   dnr:usingStore [ a dnr:TripleStore ;
+		   					dnr:type "VDS.RDF.TripleStore" ;
+ 							dnr:usingGraph [ a dnr:Graph ; 
+ 											 dnr:type "VDS.RDF.Graph" ; 
+ 											 dnr:fromFile "~/App_Data/dataset_500.ttl" ] ] .
+ 											 
+<dotnetrdf:/dotNetRDFBSBM/bsbm1000> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm1000 .
+									 
+<dotnetrdf:/dotNetRDFBSBM/bsbm1000stats> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm1000 ;
+									 dnr:queryOptimiser [ a dnr:QueryOptimiser ;
+														  dnr:type "VDS.RDF.Query.Optimisation.WeightedOptimiser" ;
+														  dnr:usingGraph [ a dnr:Graph ;
+																		   dnr:type "VDS.RDF.Graph" ;
+																		   dnr:fromFile "~/App_Data/stats_1000.ttl" ] ] .
+									 									 
+_:bsbm1000 a dnr:SparqlQueryProcessor ;
+		   dnr:usingStore [ a dnr:TripleStore ;
+		   					dnr:type "VDS.RDF.TripleStore" ;
+ 							dnr:usingGraph [ a dnr:Graph ; 
+ 											 dnr:type "VDS.RDF.Graph" ; 
+ 											 dnr:fromFile "~/App_Data/dataset_1000.ttl" ] ] .
+ 											 
+<dotnetrdf:/dotNetRDFBSBM/bsbm1500> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm1500 .
+									 
+<dotnetrdf:/dotNetRDFBSBM/bsbm1500stats> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm1500 ;
+									 dnr:queryOptimiser [ a dnr:QueryOptimiser ;
+														  dnr:type "VDS.RDF.Query.Optimisation.WeightedOptimiser" ;
+														  dnr:usingGraph [ a dnr:Graph ;
+																		   dnr:type "VDS.RDF.Graph" ;
+																		   dnr:fromFile "~/App_Data/stats_1500.ttl" ] ] .
+									 									 
+_:bsbm1500 a dnr:SparqlQueryProcessor ;
+		   dnr:usingStore [ a dnr:TripleStore ;
+		   					dnr:type "VDS.RDF.TripleStore" ;
+ 							dnr:usingGraph [ a dnr:Graph ; 
+ 											 dnr:type "VDS.RDF.Graph" ; 
+ 											 dnr:fromFile "~/App_Data/dataset_1500.ttl" ] ] .
+ 											 
+<dotnetrdf:/dotNetRDFBSBM/bsbm2000> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm2000 .
+									 
+<dotnetrdf:/dotNetRDFBSBM/bsbm2000stats> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm2000 ;
+									 dnr:queryOptimiser [ a dnr:QueryOptimiser ;
+														  dnr:type "VDS.RDF.Query.Optimisation.WeightedOptimiser" ;
+														  dnr:usingGraph [ a dnr:Graph ;
+																		   dnr:type "VDS.RDF.Graph" ;
+																		   dnr:fromFile "~/App_Data/stats_2000.ttl" ] ] .
+									 									 
+_:bsbm2000 a dnr:SparqlQueryProcessor ;
+		   dnr:usingStore [ a dnr:TripleStore ;
+		   					dnr:type "VDS.RDF.TripleStore" ;
+ 							dnr:usingGraph [ a dnr:Graph ; 
+ 											 dnr:type "VDS.RDF.Graph" ; 
+ 											 dnr:fromFile "~/App_Data/dataset_2000.ttl" ] ] .
+ 											 
+<dotnetrdf:/dotNetRDFBSBM/bsbm2500> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm2500 .
+									 
+<dotnetrdf:/dotNetRDFBSBM/bsbm2500stats> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm2500 ;
+									 dnr:queryOptimiser [ a dnr:QueryOptimiser ;
+														  dnr:type "VDS.RDF.Query.Optimisation.WeightedOptimiser" ;
+														  dnr:usingGraph [ a dnr:Graph ;
+																		   dnr:type "VDS.RDF.Graph" ;
+																		   dnr:fromFile "~/App_Data/stats_2500.ttl" ] ] .
+									 									 
+_:bsbm2500 a dnr:SparqlQueryProcessor ;
+		   dnr:usingStore [ a dnr:TripleStore ;
+		   					dnr:type "VDS.RDF.TripleStore" ;
+ 							dnr:usingGraph [ a dnr:Graph ; 
+ 											 dnr:type "VDS.RDF.Graph" ; 
+ 											 dnr:fromFile "~/App_Data/dataset_2500.ttl" ] ] .
+ 											 
+<dotnetrdf:/dotNetRDFBSBM/bsbm2785> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm2785 .
+									 
+<dotnetrdf:/dotNetRDFBSBM/bsbm2785stats> a dnr:HttpHandler ;
+									 dnr:type "VDS.RDF.Web.QueryHandler" ;
+									 dnr:queryProcessor _:bsbm2785 ;
+									 dnr:queryOptimiser [ a dnr:QueryOptimiser ;
+														  dnr:type "VDS.RDF.Query.Optimisation.WeightedOptimiser" ;
+														  dnr:usingGraph [ a dnr:Graph ;
+																		   dnr:type "VDS.RDF.Graph" ;
+																		   dnr:fromFile "~/App_Data/stats_2785.ttl" ] ] .
+									 									 
+_:bsbm2785 a dnr:SparqlQueryProcessor ;
+		   dnr:usingStore [ a dnr:TripleStore ;
+		   					dnr:type "VDS.RDF.TripleStore" ;
+ 							dnr:usingGraph [ a dnr:Graph ; 
+ 											 dnr:type "VDS.RDF.Graph" ; 
+ 											 dnr:fromFile "~/App_Data/dataset_2785.ttl" ] ] .
+ 		   
